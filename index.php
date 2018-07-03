@@ -13,7 +13,6 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
     <title>Полеты на воздушном шаре - стоимость, фото | Легкие люди</title>
-    description
 </head>
 <body>
     <div class="app">
@@ -30,8 +29,24 @@
                 <a target="_blanck" href="http://youtube.com/channel/UCFt_NJlmjEm2vQf_DqBtRpw"><span class="youtube"></span></a>
                 <a target="_blanck" href="http://instagram.com/ll12ru/"><span class="insta"></span></a>
             </div>
+            
         </div>
     </menu>
+    <div class="left-menu">
+        <div class="wrap-menu">
+            <ul>
+                <li class="active"><a href="#howmatch">- КУПИТЬ СЕРТИФИКАТ </a></li>
+                <li><a href="#howfly">- КАК ПРОХОДИТ ПОЛЁТ </a></li>
+                <li><a href="#protect">- БЕЗОПАСНОСТЬ </a></li>
+                <li><a href="#gallery">- ГАЛЕРЕЯ </a></li>
+                <li><a href="#contact">- КОНТАКТЫ </a></li>
+            </ul>
+            <div class="wrap">
+                <img src="dist/img/phone_icon.png" alt="">
+                <div class="phone">+7 903 326 5550</div>
+            </div>
+        </div>
+    </div>
     <section class="main">
         <div class="balon"></div>
         <div class="logo"></div>
@@ -55,7 +70,7 @@
         <div class="how">
             <div class="back">
                 <div class="text-block">
-                <h2>КАК ПРОХОДИТ ПОЛЁТ?</h2>
+                <h2 id="howfly">КАК ПРОХОДИТ ПОЛЁТ?</h2>
                 <p> Шаг 1: Вы покупаете сертификат, выбираете  дату и район полета.</p>
                 <p>Шаг 2: За несколько дней до полета: пилот внимательно изучает состояние атмосферы над районом полетов, строит примерный маршрут.</p>
                 <p>Шаг 3:  За сутки до вылета: пилот согласует  план полета в Самарском зональном центре Единой системы организации воздушного движения.</p>
@@ -78,7 +93,7 @@
         <div class="protect">
             <div class="back">
                 <div class="text-block">
-                <h2>БЕЗОПАСНОСТЬ</h2>
+                <h2 id="protect">БЕЗОПАСНОСТЬ</h2>
                 <p>Воздушный шар признается одним из самых безопасных видов воздушного транспорта. Его конструкция максимально проста, и совершенствовалась  на протяжении более 200 лет (первый аэростат совершил полет в 1783 году). Все ключевое оборудование на аэростате продублировано. Все детали, вплоть до самого маленького карабина, имеют пятикратный запас прочности.</p>
                 <p>Наши пилоты обучены и сертифицированы. «Легкие люди» осуществляют не только коммерческие полеты, но и участвуют в соревнованиях российского и международного уровня. Спортивный опыт важен для повышения профессионализма пилота, а значит, и для вашей безопасности.</p>
                 <p>Техническое состояние воздушного аппарата регулярно проверяется, шар проходит обязательную сертификацию. Деятельность Клуб Воздухоплавателей контролирует целый ряд государственных организаций.</p>
@@ -107,7 +122,7 @@
     </section>
 
     <section class="gallery">
-        <h2>ФОТО ПОЛЕТОВ</h2>
+        <h2 id="gallery">ФОТО ПОЛЕТОВ</h2>
         <div class="row">
             <a href="dist/img/Gallery/Full/1.jpg" data-lightbox="roadtrip"><img class="col" src="dist/img/Gallery/Preview/1.jpg" alt=""></a>
             <a href="dist/img/Gallery/Full/2.jpg" data-lightbox="roadtrip"><img class="col" src="dist/img/Gallery/Preview/2.jpg" alt=""></a>
@@ -169,7 +184,7 @@
         <div class="how-match">
             <div class="back">
                 <div class="text-block">
-                    <h2>стоимость полета на воздушном шаре</h2>
+                    <h2 id="howmatch">стоимость полета на воздушном шаре</h2>
                     <p><b>Для того чтобы совершить полет, нужно приобрести сертификат на полет. Выберите один из трех номиналов сертификата, который подходит именно вам:</b></p>
                     <p>Бронзовый – одно место, групповой часовой полет. С вами в корзине будут другие хорошие люди.</p>
                     <p class="not-top">Стоимость  для детей 7-14 лет – 3500 р., для взрослых – 7000 р.</p>
@@ -186,7 +201,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="contact">
         <div class="wrap">
             <h2>МЕЧТАЕТЕ О НЕБЕ? МЫ ПОДАРИМ ЕГО ВАМ!</h2>
             <p>Захватывающий полет на воздушном шаре от Клуба воздухоплавателей «Лёгкие люди»!</p>

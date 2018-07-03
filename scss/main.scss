@@ -51,8 +51,7 @@ body {
 }
 menu {
     width: 100%;
-    background: white;
-    opacity: .8;
+    background:white;
     height: 48px;
     margin: 0;
     padding: 0;
@@ -73,6 +72,7 @@ menu {
         justify-content: space-between;
         height: 100%;
         margin: 0 auto;
+        position: relative;
         @media (max-width: $w768) {
             width:$w768;
         }
@@ -164,6 +164,57 @@ menu {
                     background: url(img/insta_active.png)  no-repeat;
                     background-size: contain;
                 }
+            }
+        }
+    }
+}
+
+.left-menu {
+    width: 0px;
+    height:calc(100vh - 48px);
+    position: fixed;
+    left:0;
+    top:48px;
+    background: white;
+    z-index: 444;
+    .wrap-menu{
+        display:none;
+        width: 278px;
+        float: right;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li {
+                width: 100%;
+                height: 46px;
+                line-height: 46px;
+                text-indent: 15px;
+                transition: all .4s ease .1s; 
+            }
+            li:hover {
+                background: #ecf2f9;
+            }
+            a,a:hover,a:visited {
+                color:black;
+                text-decoration: none;
+            }
+
+            li:first-child {
+                a{
+                    color:#f41f2a;
+                }
+            } 
+        }
+        .wrap {
+            margin-top: 20px;
+            padding-left: 15px;
+            img {
+                float:left;
+            }
+            .phone {
+                line-height: 32px;
+                text-indent: 5px;
             }
         }
     }
