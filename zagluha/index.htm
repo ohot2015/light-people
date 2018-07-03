@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Легкие люди</title>
+</head>
+<body>
+  <img src="Baloon.png" alt="" class="balon2 balon">
+  <div class="logo"></div>
+  <div class="desc"><span>Наш сайт откроется очень скоро!</span> <p>
+ </p>
+  </div><br><br>
+  <center>
+  <form name="33948_buyNow_simple_button" id="33948_buyNow_simple_button" action="https://www.moneta.ru/shopping-81782180.htm" target="_blank" method="post">
+<fieldset>
+<input type="hidden" name="MNT_ITEM_ID" value="33948" />
+<input type="hidden" name="MNT_QUANTITY" value="1" />
+<input type="submit" value="Бронзовый сертификат" />
+<!-- дополнительные параметры -->
+</fieldset>
+</form>
+  
+  <form name="33947_buyNow_simple_button" id="33947_buyNow_simple_button" action="https://www.moneta.ru/shopping-81782180.htm" target="_blank" method="post">
+<fieldset>
+<input type="hidden" name="MNT_ITEM_ID" value="33947" />
+<input type="hidden" name="MNT_QUANTITY" value="1" />
+<input type="submit" value="Серебряный сертификат" />
+<!-- дополнительные параметры -->
+</fieldset>
+</form>
+  
+  <form name="33946_buyNow_simple_button" id="33946_buyNow_simple_button" action="https://www.moneta.ru/shopping-81782180.htm" target="_blank" method="post">
+<fieldset>
+<input type="hidden" name="MNT_ITEM_ID" value="33946" />
+<input type="hidden" name="MNT_QUANTITY" value="1" />
+<input type="submit" value="Золотой сертификат" />
+<!-- дополнительные параметры -->
+</fieldset>
+</form>
+  
+  </center>
+  
+  
+  <div class="social">
+    <!-- тут менять пример <a href="http://vk.com/id17493517"><div class="vk"></div></a>  -->
+    <a href="https://vk.com/legkie_lyudi"><div class="vk"></div></a>
+    <a href="https://www.facebook.com/pg/legkielyudi/posts"><div class="fb"></div></a>
+    <a href="https://www.instagram.com/klub_vozduhoplavateley/"><div class="insta"></div></a>
+    <a href="https://www.youtube.com/channel/UCFt_NJlmjEm2vQf_DqBtRpw"><div class="utube"></div></a>
+  </div>
+  <div class="phone">(8362) 36-05-36</div>
+
+  <style>
+    @font-face {
+      font-family: "RobotoCondensed-Bold";
+      src: url("fonts/RobotoCondensed-Bold.ttf");
+    }
+    @font-face {
+      font-family: "RobotoCondensed-BoldItalic";
+      src: url("fonts/RobotoCondensed-BoldItalic.ttf");
+    }
+    @font-face {
+      font-family: "RobotoCondensed-Italic";
+      src: url("fonts/RobotoCondensed-Italic.ttf");
+    }
+    @font-face {
+      font-family: "RobotoCondensed-Light";
+      src: url("fonts/RobotoCondensed-Light.ttf");
+    }
+    @font-face {
+      font-family: "RobotoCondensed-LightItalic";
+      src: url("fonts/RobotoCondensed-LightItalic.ttf");
+    }
+    @font-face {
+      font-family: "RobotoCondensed-Regular";
+      src: url("fonts/RobotoCondensed-Regular.ttf");
+    }
+    body{
+      margin:0;
+      padding:0;
+      width: 100%;
+      height: 100%;
+      background:url(back.jpg) no-repeat;
+      background-size: cover;
+      overflow: hidden;
+    }
+    .balon {
+      position: absolute;
+      /*background: url(Baloon.png);*/
+      width:350px;
+      height: 430px;
+      left:calc(50% - 350px / 2);
+      top: 76px;
+      z-index: 9999;
+    }
+    .logo {
+      position: absolute;
+      width:233px;
+      height: 173px;
+      top:482px;
+      left:calc(50% - 218px  / 2);
+      background: url(logo.png);
+    }
+    .desc {
+      width: 700px;
+      height: 20px;
+      margin:0 auto      ;
+      margin-top: 714px;
+      font-family: RobotoCondensed-Bold;
+    }
+    span {
+      width:226px;
+      margin: 0 auto;
+      display :block;
+      background: white;
+      padding-left:5px;
+      padding-right: 5px;
+    }
+    p {
+      width:568px;
+      margin: 0 auto;
+      display :block;
+      background: white;
+      padding-left:5px;
+      padding-right: 5px;
+    }
+    .social {
+      width: 262px;
+      margin:58px auto;
+      margin-bottom:0;
+      display:flex;
+      justify-content:  center;
+    }
+    .social div {
+      margin: auto 7px;
+    }
+    .vk {
+      background: url(vk.png);
+      width:50px;
+      height:50px;
+    }
+    .fb {
+      background: url(fb.png);
+      width:50px;
+      height:50px;
+    }
+    .insta {
+      background: url(insta.png);
+      width:50px;
+      height:50px;
+    }
+    .utube {
+      background: url(youtube.png);
+      width:50px;
+      height:50px;
+    }
+    .phone {
+      font-family: RobotoCondensed-Bold;
+      font-size: 36px;
+      width: 240px;
+      margin:0 auto;
+      margin-top: 20px;
+      color:white;
+    }
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+    $(function() {
+      let balon = $('.balon'),
+      w = balon.width(),
+      h = balon.height(),
+      offset = balon.offset();
+      let timer = setInterval(()=> {
+        balon.width(balon.width() / 1.0022222222222222)
+        balon.height(balon.height() / 1.0022222222222222)
+        balon.offset({
+          top: balon.offset().top + .4 ,
+          left: balon.offset().left + .9 ,
+        })
+        if (balon.width() < 10) {
+          clearInterval(timer);
+          window.location.reload();
+        }
+      },400);
+    })
+  </script>
+</body>
+</html>
