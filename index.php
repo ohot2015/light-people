@@ -43,7 +43,7 @@
             </ul>
             <div class="wrap">
                 <img src="dist/img/phone_icon.png" alt="">
-                <div class="phone">+7 903 326 5550</div>
+                <div class="phone"><span>+7 903 326 5550</span></div>
             </div>
         </div>
     </div>
