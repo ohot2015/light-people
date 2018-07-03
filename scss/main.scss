@@ -199,7 +199,11 @@ menu {
                 color:black;
                 text-decoration: none;
             }
-
+            a {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
             li:first-child {
                 a{
                     color:#f41f2a;
