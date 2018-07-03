@@ -115,7 +115,7 @@ menu {
             margin-top :-2px;
             @media (max-width: $w) {
                 width:94px;
-            }     
+            }
         }
         .social {
             height: 100%;
@@ -135,7 +135,7 @@ menu {
             .vk {
                 background: url(img/vk_white.png) no-repeat  ;
                 background-size: contain;
-                
+
                 &:hover{
                     background: url(img/vk_active.png) no-repeat  ;
                     background-size: contain;
@@ -261,7 +261,7 @@ section.main{
         left:0 !important;
         right: 0 !important;
     }
-    h1 {
+    h2 {
         font-family: 'RobotoCondensed-Bold';
         font-weight:700;
         font-size: 35px;
@@ -379,7 +379,7 @@ section.second{
         @media (max-width: $w) {
             margin-top: 60px !important;
         }
-        h1 {
+        h2 {
             letter-spacing: 2.3px;
             @media screen and(max-width:$w768){
                 margin-top: 0px;
@@ -540,7 +540,7 @@ section.gallery {
     @media (max-width:$w) {
         margin-top: 342px;
     }
-    h1 {
+    h2 {
         margin:0 auto;
         width: 1170px;
         text-indent: 15px;
@@ -576,7 +576,7 @@ section.gallery {
         width:102%;
         .col {
             width: 320px;
-            height: 240px;
+            //height: 240px;
             float:left;
             @media  (max-width:$w768) {
                 width: 156px;
@@ -627,7 +627,7 @@ section.feedback{
     &>*{
         margin: 0 15px;
     }
-    h1 {
+    h2 {
         font-family: RobotoCondensed-Bold;
         margin-top: 24px;
         letter-spacing: 0.3px;
@@ -768,7 +768,7 @@ section.bottom {
                 top: 495px;
                 height: 468px;
             }
-            h1 {
+            h2 {
                 margin-top: 136px;
                 @media (max-width: $w480) {
                     margin-top: 20px;
@@ -781,6 +781,9 @@ section.bottom {
         background: url(img/back7.png);
         width: 848px;
         height: 898px;
+        h2 {
+            text-transform: uppercase;
+        }
         @media screen and (max-width: $w768) {
             width:$w768 !important;
             margin-top: 0px;
@@ -805,7 +808,7 @@ section.bottom {
                 top: 30px;
                 width: 736px;
                 padding:0;
-                p,h1 {
+                p,h2 {
                     padding: 0 22px;
                     padding-right:52px;
                 }
@@ -814,7 +817,7 @@ section.bottom {
                 top: 30px;
                 width: 448px;
                 padding:0;
-                p,h1 {
+                p,h2 {
                     padding: 0 22px;
                     padding-right:52px;
                 }
@@ -823,7 +826,7 @@ section.bottom {
                 top: 294px;
                 width:290px !important;
                 padding:0;
-                p,h1 {
+                p,h2 {
                     padding: 0 22px;
                     padding-right:52px;
                 }
@@ -910,7 +913,7 @@ footer {
         &>* {
             margin-left:13px;
         }
-        h1 {
+        h2 {
             font-family: RobotoCondensed-Bold;
             font-size: 36px;
             padding-top: 45px;
@@ -928,7 +931,7 @@ footer {
             line-height: 20px;
         }
         @media (max-width: $w480) {
-            h1{
+            h2{
                 font-size: 18px;
                 padding-top: 16px;
                 padding-bottom: 0px;
