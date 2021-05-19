@@ -3,26 +3,26 @@
     font-family: "RobotoCondensed-Bold";
     src: url("../fonts/RobotoCondensed-Bold.ttf");
 }
-@font-face {
-    font-family: "RobotoCondensed-BoldItalic";
-    src: url("fonts/RobotoCondensed-BoldItalic.ttf");
-}
-@font-face {
-    font-family: "RobotoCondensed-Italic";
-    src: url("fonts/RobotoCondensed-Italic.ttf");
-}
-@font-face {
-    font-family: "RobotoCondensed-Light";
-    src: url("fonts/RobotoCondensed-Light.ttf");
-}
-@font-face {
-    font-family: "RobotoCondensed-LightItalic";
-    src: url("fonts/RobotoCondensed-LightItalic.ttf");
-}
-@font-face {
-    font-family: "RobotoCondensed-Regular";
-    src: url("../fonts/RobotoCondensed-Regular.ttf");
-}
+//@font-face {
+//    font-family: "RobotoCondensed-BoldItalic";
+//    src: url("fonts/RobotoCondensed-BoldItalic.ttf");
+//}
+//@font-face {
+//    font-family: "RobotoCondensed-Italic";
+//    src: url("fonts/RobotoCondensed-Italic.ttf");
+//}
+//@font-face {
+//    font-family: "RobotoCondensed-Light";
+//    src: url("fonts/RobotoCondensed-Light.ttf");
+//}
+//@font-face {
+//    font-family: "RobotoCondensed-LightItalic";
+//    src: url("fonts/RobotoCondensed-LightItalic.ttf");
+//}
+//@font-face {
+//    font-family: "RobotoCondensed-Regular";
+//    src: url("../fonts/RobotoCondensed-Regular.ttf");
+//}
 
 $w: 320px;
 $w480: 480px;
@@ -91,7 +91,7 @@ menu {
             }
             cursor: pointer;
             .ico {
-                background: url(img/buter.png) no-repeat center;
+                background: url(../img/buter.png) no-repeat center;
                 width: 21px;
                 height: 17px;
                 float:left;
@@ -108,7 +108,7 @@ menu {
             }
         }
         .logo_small {
-            background: url(img/logo_small.png) no-repeat center;
+            background: url(../img/logo_small.png) no-repeat center;
             width: 50px;
             height: 100%;
             margin-left: 94px;
@@ -133,35 +133,35 @@ menu {
                 }
             }
             .vk {
-                background: url(img/vk_white.png) no-repeat  ;
+                background: url(../img/vk_white.png) no-repeat  ;
                 background-size: contain;
 
                 &:hover{
-                    background: url(img/vk_active.png) no-repeat  ;
+                    background: url(../img/vk_active.png) no-repeat  ;
                     background-size: contain;
                 }
             }
             .fb {
-                background: url(img/fb_white.png) no-repeat ;
+                background: url(../img/fb_white.png) no-repeat ;
                 background-size: contain;
                 &:hover{
-                    background: url(img/fb_active.png) no-repeat ;
+                    background: url(../img/fb_active.png) no-repeat ;
                     background-size: contain;
                 }
             }
             .youtube {
-                background: url(img/youtube_white.png) no-repeat ;
+                background: url(../img/youtube_white.png) no-repeat ;
                 background-size: contain;
                 &:hover{
-                    background: url(img/youtube_active.png) no-repeat ;
+                    background: url(../img/youtube_active.png) no-repeat ;
                     background-size: contain;
                 }
             }
             .insta {
-                background: url(img/insta_white.png) no-repeat ;
+                background: url(../img/insta_white.png) no-repeat ;
                 background-size: contain;
                 &:hover{
-                    background: url(img/insta_active.png)  no-repeat;
+                    background: url(../img/insta_active.png)  no-repeat;
                     background-size: contain;
                 }
             }
@@ -233,7 +233,7 @@ menu {
     // }
 }
 section.main{
-    background: url(img/background1.png) ;
+    background: url(../img/background1.png) ;
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -253,7 +253,7 @@ section.main{
     .balon {
         position: absolute;
         left: calc(50% - 222px);
-        background: url(img/baloon.png) no-repeat center;
+        background: url(../img/baloon.png) no-repeat center;
         width: 452px;
         height: 555px;
         top: 148px;
@@ -274,7 +274,7 @@ section.main{
     .logo{
         position: absolute;
         left: calc(50% - 222px);
-        background: url(img/logo_big.png) no-repeat center;
+        background: url(../img/logo_big.png) no-repeat center;
         width: 452px;
         height: 428px;
         top: 570px;
@@ -367,7 +367,7 @@ section.second{
         width: 848px;
         margin-left: 13px;
         height: 600px;
-        background: url(img/back2.png) no-repeat center;
+        background: url(../img/back2.png) no-repeat center;
         @media (max-width: $w768) {
             width:$w768;
             margin-left: 0;
@@ -396,7 +396,7 @@ section.second{
     }
     .how {
         position: relative;
-        background: url(img/back3.png) no-repeat center;
+        background: url(../img/back3.png) no-repeat center;
         width: 846px;
         height: 664px;
         margin-left:306px;
@@ -505,7 +505,7 @@ section.second{
         width: 848px;
         margin-left: 13px;
         height: 711px;
-        background: url(img/back4.png);
+        background: url(../img/back4.png);
         @media (max-width: $w768) {
             width: $w768;
             margin-left: 0;
@@ -534,7 +534,7 @@ section.second{
         width: 848px;
         margin-left: 305px;
         height: 763px;
-        background: url(img/back5.png) no-repeat;
+        background: url(../img/back5.png) no-repeat;
         @media (max-width: $w768) {
             width: $w768;
             margin-left: 0;
@@ -795,7 +795,7 @@ section.bottom {
     }
     .serificat {
         position: relative;
-        background: url(img/back6.png);
+        background: url(../img/back6.png);
         width: 848px;
         height: 662px;
         margin-left: 290px;
@@ -837,7 +837,7 @@ section.bottom {
     }
     .how-match {
         position: relative;
-        background: url(img/back7.png);
+        background: url(../img/back7.png);
         width: 848px;
         height: 898px;
         h2 {
@@ -941,7 +941,7 @@ section.bottom {
 footer {
     color: white;
     margin-top: 53px;
-    background: url(img/back8.png);
+    background: url(../img/back8.png);
     height: 717px;
     @media (max-width:$w768){
         margin-top: 0px;
@@ -1019,16 +1019,16 @@ footer {
                     height: 36px;
                 }
                 &.phone:before {
-                    background: url(img/phone.png) no-repeat;
+                    background: url(../img/phone.png) no-repeat;
                 }
                 &.vk:before {
-                    background: url(img/vk.png) no-repeat;
+                    background: url(../img/vk.png) no-repeat;
                 }
                 &.mail:before {
-                    background: url(img/mail.png) no-repeat;
+                    background: url(../img/mail.png) no-repeat;
                 }
                 &.insta:before {
-                    background: url(img/insta.png) no-repeat;
+                    background: url(../img/insta.png) no-repeat;
                 }
                 a, a:visited, a:focus, a:active {
                     text-decoration: none;

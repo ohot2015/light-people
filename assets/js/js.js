@@ -1,3 +1,5 @@
+
+
 $(function(){
     $('.bronz').click(function(){$('#33948_buyNow_simple_button').submit()});
     $('.silver').click(function(){$('#33947_buyNow_simple_button').submit()});
@@ -13,8 +15,6 @@ $(function(){
     });
 
     if ($(window).width() < 768 ) {
-        console.log(123123);
-        
         $('.left-menu .phone span').wrap('<a href="tel:+79033265550"><a>');
     } 
 })
