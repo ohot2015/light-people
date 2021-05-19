@@ -1,6 +1,9 @@
 import css from './scss/main.scss'
 import $ from 'jquery';
-console.log(123123131231)
+
+global.jQuery = $;
+global.$ = $;
+
 console.log();
 $(function(){
   $('.bronz').click(function(){$('#33948_buyNow_simple_button').submit()});

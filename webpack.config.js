@@ -14,9 +14,6 @@ module.exports = {
     compress: true,
     port: 9000,
   },
-  externals: {
-    jquery: 'jQuery'
-  },
   module: {
     rules: [
       {
@@ -50,15 +47,20 @@ module.exports = {
         }
       },
       {
-        test: require.resolve('jquery'),
-        use: [{
-          loader: 'expose-loader',
-          options: 'jQuery'
-        },{
-          loader: 'expose-loader',
-          options: '$'
-        }]
+        test: /\.(html)$/,
+        use: ['html-loader']
       }
+
+      // {
+      //   test: require.resolve('jquery'),
+      //   use: [{
+      //     loader: 'expose-loader',
+      //     options: 'jQuery'
+      //   },{
+      //     loader: 'expose-loader',
+      //     options: '$'
+      //   }]
+      // }
 
     ],
   },
@@ -66,6 +68,10 @@ module.exports = {
     new HtmlWebpackPlugin(
       {template: path.resolve(__dirname, './assets/index.html')}
     ),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
     // new webpack.ProvidePlugin({
     //   $: 'jquery',
     //   jQuery: 'jquery',
