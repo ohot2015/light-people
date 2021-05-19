@@ -28,23 +28,17 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(png|jpe?g|gif|svg|ttf|woff|otf)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts/'
+              name: '[name].[contenthash].[ext]',
+              outputPath: 'static/img',
+              esModule: false // <- here
             }
           }
         ]
-      },
-      {
-        test: /\.(png|jpg|svg|ttf|eot|woff|woff2)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[path][name].[ext]'
-        }
       },
       {
         test: /\.(html)$/,
