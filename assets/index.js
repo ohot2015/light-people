@@ -1,14 +1,22 @@
 import './scss/main.scss'
 import $ from 'jquery';
-import 'lightbox2'
+import lightbox from 'lightbox2'
+//import 'lightbox2/dist/css/lightbox.min.css'
 
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true
+})
 global.jQuery = $;
 global.$ = $;
 $(function(){
   $('.bronze').click(function(){$('#33948_buyNow_simple_button').submit()});
   $('.silver').click(function(){$('#33947_buyNow_simple_button').submit()});
   $('.gold').click(function(){$('#33946_buyNow_simple_button').submit()});
+
   $('.platina').click(function(){$('#39516_buyNow_simple_button').submit()});
+  $('.corporat').click(function(){$('#48235_buyNow_simple_button').submit()});
+  $('.diamond').click(function(){$('#48234_buyNow_simple_button').submit()});
 
   resize();
   var $page = $('html, body');

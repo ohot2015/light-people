@@ -23,7 +23,7 @@
     font-family: "RobotoCondensed-Regular";
     src: url("../fonts/RobotoCondensed-Regular.ttf")  format('truetype');
 }
-
+@import 'lightbox2/dist/css/lightbox.min.css';
 $w: 320px;
 $w480: 480px;
 $w768 : 768px;
@@ -920,6 +920,15 @@ section.bottom {
             }
             button.gold {
                 background: #f4ac21;
+            }
+            button.diamond {
+                background: #4169e1;
+            }
+            button.platina {
+                background: #326ddc;
+            }
+            button.corporat {
+                background: #649AE8;
             }
             .not-top {
                 margin-top:-18px;

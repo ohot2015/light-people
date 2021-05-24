@@ -1,16 +1,17 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 var webpack = require('webpack');
 
 module.exports = {
   mode:'development',
   entry: './assets/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'http'),
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: path.join(__dirname, 'http'),
     compress: true,
     port: 9000,
   },
@@ -28,13 +29,14 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg|ttf|woff|otf)$/,
+        //test: /\.(png|jpe?g|gif|svg|ttf|woff|otf)$/,
+        test: /\.(png|gif|svg|ttf|woff|otf)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[contenthash].[ext]',
-              outputPath: 'static/img',
+              name: '[name].[ext]',
+              outputPath: 'img',
               esModule: false // <- here
             }
           }
@@ -62,6 +64,12 @@ module.exports = {
     new HtmlWebpackPlugin(
       {template: path.resolve(__dirname, './assets/index.html')}
     ),
+    new CopyWebpackPlugin({
+      patterns:[
+      {from:'./assets/img',to:'img'},
+      {from:'./assets/tipovoy_dogovor.doc',to:''}
+      ]
+    }),
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
