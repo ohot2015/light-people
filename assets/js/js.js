@@ -1,5 +1,3 @@
-
-
 $(function(){
     $('.bronz').click(function(){$('#33948_buyNow_simple_button').submit()});
     $('.silver').click(function(){$('#33947_buyNow_simple_button').submit()});

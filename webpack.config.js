@@ -14,6 +14,7 @@ module.exports = {
     contentBase: path.join(__dirname, 'http'),
     compress: true,
     port: 9000,
+    host: '0.0.0.0'
   },
   module: {
     rules: [
