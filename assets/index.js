@@ -10,7 +10,7 @@ lightbox.option({
 global.jQuery = $;
 global.$ = $;
 $(function(){
-  $('.bronze').click(function(){$('#33948_buyNow_simple_button').submit()});
+  $('.bronz').click(function(){$('#39692_buyNow_simple_button').submit()});
   $('.silver').click(function(){$('#33947_buyNow_simple_button').submit()});
   $('.gold').click(function(){$('#33946_buyNow_simple_button').submit()});
 
