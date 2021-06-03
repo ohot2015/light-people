@@ -20,9 +20,16 @@ $(function(){
   $('.unlim').click(function(){$('#48507_buyNow_simple_button').submit()});
   $('.faded').click(function(){ $(this).hide(); $('.baraner').hide()})
   $('.baraner .close').click(function(){ $('.faded').hide();$('.baraner').hide()})
+  $('.baraner-href').click(function(){
+    $page.animate({
+      scrollTop: $($.attr(this, 'href')).offset().top - 150
+    }, 500);
+    $('.faded').hide();$('.baraner').hide()
+    return false
+  })
   resize();
   var $page = $('html, body');
-  $('a[href*="#"]').click(function () {
+  $('a[href*="#"]:not(.baraner-href)').click(function () {
     $page.animate({
       scrollTop: $($.attr(this, 'href')).offset().top - 150
     }, 500);
