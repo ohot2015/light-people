@@ -1099,21 +1099,21 @@ section.bottom {
 }
 footer {
  color: white;
- margin-top: 160px;
+ margin-top: 253px;
  background: url(../img/back8.png);
  height: 717px;
  @media (max-width:$w768){
-     margin-top: 0px;
+     margin-top: 97px;
      height: 500px;
      width: $w768;
  }
  @media (max-width:$w480){
-     margin-top: 0px;
+     margin-top: 205px;
      height: 468px;
      width: $w480;
  }
  @media (max-width:$w){
-     margin-top: 298px;
+     margin-top: 542px;
      width: 100%;
  }
  .wrap {
