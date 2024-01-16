@@ -10,14 +10,16 @@ lightbox.option({
 global.jQuery = $;
 global.$ = $;
 $(function(){
-  $('.bronz').click(function(){$('#39692_buyNow_simple_button').submit()});
-  $('.silver').click(function(){$('#33947_buyNow_simple_button').submit()});
-  $('.gold').click(function(){$('#33946_buyNow_simple_button').submit()});
+  $('.bronz').click(function(){$('#60464_buyNow_simple_button').submit()});
+  $('.silver').click(function(){$('#60465_buyNow_simple_button').submit()});
+ // $('.gold').click(function(){$('#60466_buyNow_simple_button').submit()});
 
-  $('.platina').click(function(){$('#39516_buyNow_simple_button').submit()});
-  $('.corporat').click(function(){$('#48235_buyNow_simple_button').submit()});
-  $('.diamond').click(function(){$('#48234_buyNow_simple_button').submit()});
-  $('.unlim').click(function(){$('#48507_buyNow_simple_button').submit()});
+   $('.platina').click(function(){$('#60466_buyNow_simple_button').submit()});
+  // $('.corporat').click(function(){$('#48235_buyNow_simple_button').submit()});
+  // $('.diamond').click(function(){$('#48234_buyNow_simple_button').submit()});
+  // $('.unlim').click(function(){$('#48507_buyNow_simple_button').submit()});
+
+
   $('.faded').click(function(){ $(this).hide(); $('.baraner').hide()})
   $('.baraner .close').click(function(){ $('.faded').hide();$('.baraner').hide()})
   $('.baraner-href').click(function(){

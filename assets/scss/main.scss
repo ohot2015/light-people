@@ -398,8 +398,13 @@ section.main{
      left: calc(50% - 222px);
      background: url(../img/baloon.png) no-repeat center;
      width: 452px;
-     height: 555px;
-     top: 148px;
+     height: 482px;
+     top: 78px;
+     background-size: contain;
+     @media (max-width: 1440px) {
+         height: 300px;
+         top: 78px;
+     }
      @media (max-width: $w480) {
          left: calc(50% - 150px);
          width: 300px;
@@ -419,8 +424,13 @@ section.main{
      left: calc(50% - 222px);
      background: url(../img/logo_big.png) no-repeat center;
      width: 452px;
-     height: 428px;
-     top: 570px;
+     height: 445px;
+     top: 454px;
+     @media (max-width: 1440px) {
+         height: 200px;
+         top: 378px;
+         background-size: contain;
+     }
      @media (max-width: $w480) {
          top: 330px;
      }
@@ -543,6 +553,8 @@ section.second{
      width: 846px;
      height: 664px;
      margin-left:306px;
+     margin-top: 50px;
+
      @media (max-width: $w768) {
          width:$w768;
          margin-left: 0;
@@ -568,6 +580,23 @@ section.second{
          }
      }
  }
+    .how.copied {
+        background: url("../img/firstslide.png");
+        background-repeat: no-repeat;
+        height: 565px;
+        h2 {
+            text-transform: uppercase;
+        }
+        @media (max-width: 767px) {
+        height: 649px;
+        }
+        @media (max-width: $w480) {
+            width:$w480;
+            margin-left: 0;
+            height: 649px;
+            background-size: cover;
+        }
+    }
  .district {
      margin-left: 14px;
      margin-right: 14px;
