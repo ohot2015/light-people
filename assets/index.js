@@ -32,13 +32,20 @@ $(function(){
 
   resize();
   var $page = $('html, body');
-  $('a[href*="#"]:not(.baraner-href)').click(function () {
+  $('a[href*="#"]:not(.baraner-href):not(.kostil-open-panel)').click(function () {
     $page.animate({
       scrollTop: $($.attr(this, 'href')).offset().top - 150
     }, 500);
     $('.buter').click();
     return false;
   });
+  $('.kostil-open-panel').click(function () {
+    $page.animate({
+      scrollTop: $($.attr(this, 'href')).offset().top - 150
+    }, 500);
+    return false;
+  });
+
 })
 $(window).resize(function() {
   resize();
