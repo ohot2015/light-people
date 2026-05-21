@@ -1,0 +1,2 @@
+scp -P 49353 -r ./http/* root@8b32fa92c850.vps.myjino.ru:/var/www/light-people/http/
+#54qBih_/#nvJZm5
